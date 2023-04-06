@@ -11,7 +11,7 @@ Host application dependencies - view related modules in context of a host
 ![Host related modules](./docs/images//hostdep.png)
 
 Modules - view all published modules, where size correlates to number of relationships
-![Modules](./docs/images/hosts.png)
+![Modules](./docs/images/modules.png)
 
 Dependencies - view all shared dependencies of modules, search by dependency
 ![Dependencies](./docs/images/dependencies.png)
