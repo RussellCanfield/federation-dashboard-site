@@ -1,0 +1,26 @@
+services:
+  web:
+    build: .
+    ports:
+      - "80:8080"
+    environment:
+      - NEOHOST=neo4j
+      - NEOPORT=7687
+  neo4j:
+    image: neo4j:5.6.0
+    restart: unless-stopped
+    ports:
+      - 7474:7474
+      - 7687:7687
+    volumes:
+      - ./conf:/conf
+      - ./data:/data
+      - ./import:/import
+      - ./logs:/logs
+      - ./plugins:/plugins
+    environment: 
+      # Raise memory limits
+      - server.memory.pagecache_size=1G
+      - NEO4J_dbms.memory.heap.initial_size=1G
+      - server.heap_max_size=1G
+      - NEO4J_AUTH=none

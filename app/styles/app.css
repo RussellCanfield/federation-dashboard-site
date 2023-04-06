@@ -1,0 +1,65 @@
+@import './tailwind.css';
+
+.view {
+  background-color: #e4e4e4;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    left: 32px;
+    top: -32px;
+   
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+.toolbar {
+    position: absolute;
+    background-color: #f4f4f4;
+    border: 1px solid #dfdfdf;
+    box-shadow: 0px 7px 14px rgba(0,0,0,.05),0px 0px 3.12708px rgba(0,0,0,.08),0px 0px 0.931014px rgba(0,0,0,.17);
+    top: calc(50% - 128px);
+    height: 256px;
+    left: 12px;
+    padding: 4px;
+    display: flex;
+    flex-flow: column;
+    z-index: 999;
+}
+
+.toolbar .toolbar-item {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 4px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #3260a8;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search {
+    position: absolute;
+    left: calc(50% - 128px);
+    width: 256px;
+    height: 32px;
+    top: 12px;
+    z-index: 999;
+}

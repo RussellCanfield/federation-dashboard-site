@@ -1,0 +1,14 @@
+node_modules
+
+/build
+/public/build
+
+/cypress/screenshots
+/cypress/videos
+
+/app/styles/tailwind.css
+data
+logs
+plugins
+conf
+import
